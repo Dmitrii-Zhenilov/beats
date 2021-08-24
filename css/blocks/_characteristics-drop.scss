@@ -1,0 +1,41 @@
+.characteristics__drop {
+    display: block;
+    width: 273px;
+    height: 293px;
+    background: #d4d4d4;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 28px 25px 34px 30px;
+    position: absolute;
+    top: 0;
+    left: 19%;
+    right: 0;
+    pointer-events: none;
+    opacity: 0;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 89px;
+        height: 231px;
+        position: absolute;
+        top: 31%;
+        right: 99%;
+
+    }
+}
+
+.characteristics__drop-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.characteristics__drop-item {
+    display: inline-flex;
+    margin-bottom: 28px;
+}
+
+.characteristics__drop-parameter {
+    width: 127px;
+    margin-left: 21px;
+}

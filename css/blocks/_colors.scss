@@ -1,0 +1,64 @@
+.title__colors {
+    color: #fff;
+    width: 170px;
+    height: 52px;
+    position: absolute;
+    top: 20%;
+    left: 9%;
+}
+
+.colors-acco {
+    display: flex;
+    z-index: 0;
+}
+
+.colors-acco__trigger-js {
+    width: rem(80px);
+    display: flex;
+    justify-content: center;
+}
+
+.acco__trigger-grey {
+    background: #999;
+}
+
+.acco__trigger-black {
+    background: #151515;
+}
+
+.acco__trigger-red {
+    background: #E01F3C;
+}
+
+.colors-acco__trigger-text {
+    font-size: 36px;
+    color: #fff;
+    white-space: nowrap;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    margin-bottom: 34px;
+}
+
+.colors-acco__item{
+    display: flex;
+    
+/*     @include phones {
+        flex-shrink: 0;
+        order: 1;
+        width: 100%;
+    } */
+}
+
+.colors-acco__content {
+    width: 0px;
+    color: #FFF;
+    overflow: hidden;
+    background: rgba(51, 53, 55, 0.9);
+}
+
+.colors-acco__item.active .colors-acco__content {
+    width: 610px;
+    padding-left: 38px;
+    padding-top: 31px;
+    padding-right: 53px;
+}

@@ -1,0 +1,39 @@
+//colors
+$white: #FFFFFF;
+$grey: #F8FAF9;
+$red:#E01F3D;
+
+//layout
+$containerWidth: 1100px;
+$baseFontSize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+@import "./media.scss";
+@import "./blocks/_layout.scss";
+//components
+@import "./blocks/_footer.scss";
+@import "./blocks/_hero.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_features.scss";
+@import "./blocks/_feature.scss";
+@import "./blocks/_button.scss";
+@import "./blocks/_section.scss";
+@import "./blocks/_headline.scss";
+@import "./blocks/_benefits.scss";
+@import "./blocks/_benefit.scss";
+@import "./blocks/_reviews.scss";
+@import "./blocks/_interactive-avatar.scss";
+@import "./blocks/_form.scss";
+@import "./blocks/_radio.scss";
+@import "./blocks/_fixed_menu.scss";
+@import "./blocks/_hamburger.scss";
+@import "./blocks/_characteristics.scss";
+@import "./blocks/_characteristics-drop.scss";
+@import "./blocks/_fullscreen-menu.scss";
+@import "./blocks/_colors.scss";
+@import "./blocks/_team.scss";
+@import "./blocks/_modal.scss";
+@import "./blocks/_player.scss";

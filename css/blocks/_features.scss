@@ -1,0 +1,17 @@
+.features {
+    display: flex;
+    margin-top: rem(70px);
+}
+
+.features__item {
+    margin-right: rem(9px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.hero__icons-section {
+    display: flex;
+    align-items: center;
+}

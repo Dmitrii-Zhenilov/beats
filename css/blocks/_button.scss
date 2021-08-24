@@ -1,0 +1,29 @@
+
+
+.button {
+    font-size: rem(16px);
+    font-weight: bold;
+    padding: rem(18px) rem(41px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    text-decoration: none;
+    color: $white;
+    background: $red;
+    border: none;
+
+    &:hover {
+        box-shadow: 0 0 rem(25px) 0 $red;
+        transition: box-shadow 0.5s
+    }
+
+    &.button--transperent {
+        background: transparent;
+        text-transform: none;
+
+        &:hover {
+            color: $red;
+            box-shadow: none;
+        }
+    }
+}

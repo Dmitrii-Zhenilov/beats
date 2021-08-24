@@ -1,0 +1,150 @@
+.player {
+    position: relative;
+    display: block;
+    width: 662px;
+    height: 392px;
+
+    @include phones {
+        width: 394px;
+        height: 233.2px;
+    }
+
+    &.active .player__splash {
+        display: none;
+    }
+
+    &.active.paused .player__start {
+        width: 12px;
+        height: 18px;
+        background: url(../img/pause.svg);
+    }
+
+    &.active.paused .player__play {
+        display: none;
+    }
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player__splash {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/scrin-splash.jpg) center center/cover no-repeat;
+    cursor: pointer;
+}
+
+.player__controls {
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+
+    @include phones {
+        padding: 0 5px;
+    }
+}
+
+.player__start {
+    width: 12px;
+    height: 18px;
+    background: url(../img/play-small.svg);
+}
+
+/* .volume__mute {
+    width: 12px;
+    height: 16px;
+    background: url(../img/vol.svg);
+    position: absolute;
+    right: 121%;
+    top: -172%;
+}
+ */
+.player__playback {
+    height: 4px;
+    width: 446px;
+    position: relative;
+    background: #333333;
+
+    @include phones {
+        width: 263px;
+        height: 2,37px;
+    }
+}
+
+/* .player__volume {
+    height: 4px;
+    width: 62px;
+    position: relative;
+    background: #333333;
+
+    @include phones {
+        width: 37px;
+        height: 2,37px;
+        margin-left: 18px;
+    }
+} */
+
+.player__playback-button {
+    background: #E01F3D;
+    border-radius: 50px;
+    border: none;
+    width: 15px;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 0;
+}
+
+/* .player__button--vol {
+    background: #E01F3D;
+    border-radius: 50px;
+    border: none;
+    width: 15px;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 0;
+}
+ */
+.player__play {
+    position: absolute;
+    top: -551%;
+    left: 47%;
+    right: 0;
+    bottom: 0;
+    background: url(../img/play.svg) center no-repeat;
+    width: 49px;
+    height: 71px;
+
+    @include phones {
+        top: -367%;
+    }
+}
+
+.player__elem {
+    @include phones {
+        width: 394px;
+        height: 222px;
+    }
+}
+
+.player__duration {
+    color: #fff;
+}

@@ -1,0 +1,110 @@
+.section {
+    height: 100%;
+    min-height: rem(650px);
+}
+
+.section__header {
+    background: $grey;
+    position: relative;
+}
+
+.section-headline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-headline::before {
+    position: absolute;
+    bottom: rem(-29px);
+    left: 21%;
+    content: url(../img/triangle.svg);
+}
+
+
+.form-section::before {
+    position: absolute;
+    top: rem(-30px);
+    right: 7%;
+    content: url(../img/hexagon.svg);
+}
+
+.section__title {
+    font-size: rem(48px);
+    font-weight: bold;
+    margin-bottom: rem(60px);
+    text-align: center;
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.section__title-form {
+    color: $white;
+}
+
+.section-reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.form-section {
+    background: url(../img/bg-form.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.section-characteristics {
+    background: $grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-colors {
+    background: url(../img/asian-girl.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.section__modal {
+    background: #313131;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+    &.open {
+        display: flex;
+    }
+}
+
+.player-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F8FAF9;
+}

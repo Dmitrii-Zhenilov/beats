@@ -1,0 +1,23 @@
+.headline {
+    text-align: center;
+}
+
+.headline__title {
+    margin-bottom: rem(18px);
+    text-transform: uppercase;
+    color: #292929;
+
+    @include phones {
+        font-size: 32px;
+}
+}
+
+.headline__subtitle {
+    color: #666666;
+    padding: 0 26%;
+    margin-bottom: rem(62px);
+
+    @include phones {
+        padding: 0 2%;
+    }
+}

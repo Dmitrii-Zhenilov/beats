@@ -1,0 +1,87 @@
+.hero__icons-section {
+    @include tablets{
+        display: none !important;
+    }
+}
+
+.hero {
+    height: 100vh;
+    min-height: rem(650px);
+    color: #292929;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        bottom: rem(-28px);
+        right: 0%;
+        content: url(../img/decoration__hero.svg); 
+    }
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hero__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @include tablets{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.hero__main-title {
+    font-size: rem(48px);
+    line-height: 94%;
+    font-weight: bold;
+    margin-bottom: rem(22px);
+    text-transform: uppercase;
+    width: 75%;
+
+    @include tablets {
+        width: 644px;
+        margin-top: rem(64px);
+    }
+
+    @include phones {
+        padding: 0 148px;
+        font-size: 32px
+    }
+}
+
+.hero__title-pic {
+    width: rem(815px);
+
+    @include tablets {
+        width: 46%;
+    }
+
+    @include phones {
+        width: 90%;
+    }
+}
+
+.hero__title-description {
+    font-size: rem(21px);
+    margin-bottom: rem(36px);
+    width: 85%;
+
+    @include tablets {
+        width: 97%;
+    }
+
+    @include phones {
+        padding: 0 148px;
+    }
+}
+
+

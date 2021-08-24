@@ -1,0 +1,50 @@
+
+.fullscreen-menu {
+    display: none;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background: #313131;
+    z-index: 10000;
+    overflow: hidden;
+    align-items: center;
+    padding: 135px 234px 328px 234px;
+
+    @include phones {
+        padding: 135px 90px;
+    }
+}
+
+.menu--fullscreen {
+    color: #FFF;
+    font-size: 36px;
+    text-align: center;
+    display: block;
+    width: 300px;
+}
+
+.fullscreen__menu-link {
+    margin-bottom: 20px;
+
+    @include phones {
+        margin-bottom: 40px;
+    }
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.fullscreen-menu__svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}
